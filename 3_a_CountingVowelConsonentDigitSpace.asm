@@ -8,9 +8,6 @@ INCLUDE "EMU8086.INC"
     dc DB ?
     sc DB ?
     
-    mark DB ?
-    size DB ?
-    
     
 .CODE
     MAIN PROC
@@ -21,7 +18,6 @@ INCLUDE "EMU8086.INC"
         MOV cc,0
         MOV dc,0
         MOV sc,0
-        MOV mark, 'u'
         
         INPUT:
             MOV AH,1
